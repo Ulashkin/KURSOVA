@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def www(request):
-    return HttpResponse("hello")
+    return render (request,'panelnavi.html')
