@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Спісок проєктів</title>
+</head>
+<body>
+    <h1>Список проектов</h1>
+    <a href="{% url 'upload_project' %}">Загрузити новий проєкт</a>
+    <ul>
+        {% for project in projects %}
+            <li>{{ project.title }} - {{ project.description }} (Автор: {{ project.author.username }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

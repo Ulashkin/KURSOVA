@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузити проєкт</title>
+</head>
+<body>
+    <h1>Загрузити проєкт</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Загрузити</button>
+    </form>
+</body>
+</html>
